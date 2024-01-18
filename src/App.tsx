@@ -1,14 +1,4 @@
-import { useEffect, useState } from 'react';
-
 import './App.css';
-import { getTreeRows } from './services';
+import { MainPage } from './pages/MainPage';
 
-export const App = () => {
-  const [tree, setTree] = useState([]);
-
-  useEffect(() => {
-    getTreeRows().then((res) => setTree(res));
-  }, []);
-
-  return <>new project</>;
-};
+export const App = () => <MainPage />;
