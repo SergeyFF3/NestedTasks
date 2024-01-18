@@ -4,12 +4,18 @@ import { getTreeRows } from '../../services';
 
 export interface IRowProps {
   child?: IRowProps[] | null;
-  equipmentCosts?: number;
   id?: number;
-  overheads?: number;
-  rowName?: string;
-  salary?: number;
+  rowName: string;
+  salary: number;
+  overheads: number;
+  parentId?: string | null;
   supportCosts?: number;
+  equipmentCosts: number;
+  estimatedProfit: number;
+  machineOperatorSalary?: number;
+  mainCosts?: number;
+  materials?: number;
+  mimExploitation?: number;
 }
 
 export const MainPage = () => {
